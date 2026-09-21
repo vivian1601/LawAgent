@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "documents": [
+    {
+      "doc_id": "45/2019/QH14",
+      "expected_articles": 220,
+      "parsed_articles": 220,
+      "chunks": 220,
+      "first_article": "1",
+      "last_article": "220",
+      "passed": true
+    },
+    {
+      "doc_id": "18/VBHN-VPQH",
+      "expected_articles": 220,
+      "parsed_articles": 220,
+      "chunks": 220,
+      "first_article": "1",
+      "last_article": "220",
+      "passed": true
+    },
+    {
+      "doc_id": "145/2020/NĐ-CP",
+      "expected_articles": 115,
+      "parsed_articles": 115,
+      "chunks": 124,
+      "first_article": "1",
+      "last_article": "115",
+      "passed": true
+    },
+    {
+      "doc_id": "38/2022/NĐ-CP",
+      "expected_articles": 5,
+      "parsed_articles": 5,
+      "chunks": 5,
+      "first_article": "1",
+      "last_article": "5",
+      "passed": true
+    },
+    {
+      "doc_id": "74/2024/NĐ-CP",
+      "expected_articles": 5,
+      "parsed_articles": 5,
+      "chunks": 6,
+      "first_article": "1",
+      "last_article": "5",
+      "passed": true
+    },
+    {
+      "doc_id": "293/2025/NĐ-CP",
+      "expected_articles": 5,
+      "parsed_articles": 5,
+      "chunks": 8,
+      "first_article": "1",
+      "last_article": "5",
+      "passed": true
+    },
+    {
+      "doc_id": "12/2022/NĐ-CP",
+      "expected_articles": 64,
+      "parsed_articles": 64,
+      "chunks": 68,
+      "first_article": "1",
+      "last_article": "64",
+      "passed": true
+    },
+    {
+      "doc_id": "283/2026/NĐ-CP",
+      "expected_articles": 68,
+      "parsed_articles": 68,
+      "chunks": 73,
+      "first_article": "1",
+      "last_article": "68",
+      "passed": true
+    }
+  ],
+  "total_articles": 702,
+  "total_chunks": 724,
+  "references": 1127,
+  "reference_relations": {
+    "amendment": 8,
+    "applies": 1089,
+    "exception": 24,
+    "repeal": 6
+  },
+  "resolved_references": 537,
+  "unresolved_cross_document_references": 590,
+  "unresolved_internal_references": 0,
+  "dangling_internal_references": 0,
+  "errors": []
+}
