@@ -1,0 +1,125 @@
+# Metadata cấp văn bản, chốt thủ công từ nguồn chính thức.
+schema_version: 2
+verified_at: "2026-09-18"
+
+documents:
+  - doc_id: "45/2019/QH14"
+    title: "Bộ luật Lao động"
+    doc_type: "bo_luat"
+    issued_date: "2019-11-20"
+    effective_from: "2021-01-01"
+    effective_to: "2025-12-31"
+    status: "het_hieu_luc_mot_phan"
+    source_url: "https://vbpl.vn/bonoivu/Pages/vbpq-thuoctinh.aspx?ItemID=139264"
+    raw_file: "raw/45-2019-QH14.pdf"
+    parser_input: "raw/45-2019-QH14.txt"
+    expected_articles: 220
+    replaces: ["10/2012/QH13"]
+
+  - doc_id: "18/VBHN-VPQH"
+    title: "Bộ luật Lao động (văn bản hợp nhất 2026)"
+    doc_type: "bo_luat"
+    issued_date: "2026-02-12"
+    effective_from: "2026-07-01"
+    effective_to: null
+    status: "con_hieu_luc"
+    source_url: "https://vanban.chinhphu.vn/?classid=0&docid=217002&pageid=27160"
+    raw_file: "raw/18-2026-VBHN-VPQH.pdf"
+    parser_input: "raw/18-2026-VBHN-VPQH.docx"
+    expected_articles: 220
+    consolidates: ["45/2019/QH14", "71/2025/QH15", "113/2025/QH15", "124/2025/QH15"]
+    note: "Mốc 01/07/2026 là ngày tất cả sửa đổi trong VBHN đã có hiệu lực."
+
+  - doc_id: "145/2020/NĐ-CP"
+    title: "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động"
+    doc_type: "nghi_dinh"
+    issued_date: "2020-12-14"
+    effective_from: "2021-02-01"
+    effective_to: null
+    status: "het_hieu_luc_mot_phan"
+    source_url: "https://vbpl.vn/TW/Pages/ivbpq-thuoctinh.aspx?ItemID=152668"
+    raw_file: "raw/145-2020-ND-CP.pdf"
+    parser_input: "raw/145-2020-ND-CP.txt"
+    expected_articles: 115
+    amended_by: ["35/2022/NĐ-CP", "10/2024/NĐ-CP", "129/2025/NĐ-CP"]
+    replaces: []
+
+  - doc_id: "38/2022/NĐ-CP"
+    title: "Mức lương tối thiểu đối với người lao động làm việc theo hợp đồng lao động"
+    doc_type: "nghi_dinh"
+    issued_date: "2022-06-12"
+    effective_from: "2022-07-01"
+    effective_to: "2024-06-30"
+    status: "het_hieu_luc"
+    source_url: "https://vbpl.vn/TW/Pages/vbpq-thuoctinh.aspx?ItemID=154245"
+    raw_file: "raw/38-2022-ND-CP.pdf"
+    parser_input: "raw/38-2022-ND-CP.txt"
+    expected_articles: 5
+    replaces: ["90/2019/NĐ-CP"]
+
+  - doc_id: "74/2024/NĐ-CP"
+    title: "Mức lương tối thiểu đối với người lao động làm việc theo hợp đồng lao động"
+    doc_type: "nghi_dinh"
+    issued_date: "2024-06-30"
+    effective_from: "2024-07-01"
+    effective_to: "2025-12-31"
+    status: "het_hieu_luc"
+    source_url: "https://vbpl.vn/TW/Pages/ivbpq-thuoctinh.aspx?ItemID=168670"
+    raw_file: "raw/74-2024-ND-CP.pdf"
+    parser_input: "raw/74-2024-ND-CP.txt"
+    expected_articles: 5
+    replaces: ["38/2022/NĐ-CP"]
+
+  - doc_id: "293/2025/NĐ-CP"
+    title: "Mức lương tối thiểu đối với người lao động làm việc theo hợp đồng lao động"
+    doc_type: "nghi_dinh"
+    issued_date: "2025-11-10"
+    effective_from: "2026-01-01"
+    effective_to: null
+    status: "con_hieu_luc"
+    source_url: "https://vbpl.vn/TW/Pages/vbpq-thuoctinh.aspx?ItemID=183939"
+    raw_file: "raw/293-2025-ND-CP.pdf"
+    parser_input: "raw/293-2025-ND-CP.txt"
+    expected_articles: 5
+    replaces: ["74/2024/NĐ-CP"]
+
+  - doc_id: "12/2022/NĐ-CP"
+    title: "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội"
+    doc_type: "nghi_dinh"
+    issued_date: "2022-01-17"
+    effective_from: "2022-01-17"
+    effective_to: "2026-09-09"
+    status: "het_hieu_luc"
+    source_url: "https://vbpl.vn/TW/Pages/vbpq-thuoctinh.aspx?ItemID=153913"
+    raw_file: "raw/12-2022-ND-CP.pdf"
+    parser_input: "raw/12-2022-ND-CP.txt"
+    expected_articles: 64
+    replaces: ["28/2020/NĐ-CP"]
+    replaced_by: "283/2026/NĐ-CP"
+
+  - doc_id: "283/2026/NĐ-CP"
+    title: "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội"
+    doc_type: "nghi_dinh"
+    issued_date: "2026-07-15"
+    effective_from: "2026-09-10"
+    effective_to: null
+    status: "con_hieu_luc"
+    source_url: "https://vanban.chinhphu.vn/?classid=1&docid=218871&pageid=27160&typegroupid=4"
+    raw_file: "raw/283-2026-ND-CP.pdf"
+    parser_input: "raw/283-2026-ND-CP.docx"
+    expected_articles: 68
+    replaces: ["12/2022/NĐ-CP"]
+
+patch_documents:
+  - doc_id: "35/2022/NĐ-CP"
+    target_doc_id: "145/2020/NĐ-CP"
+    effective_from: "2022-07-15"
+    source_url: "https://vbpl.vn/bolaodong/Pages/vbpq-toanvan.aspx?ItemID=158798"
+  - doc_id: "10/2024/NĐ-CP"
+    target_doc_id: "145/2020/NĐ-CP"
+    effective_from: "2024-03-25"
+    source_url: "https://vbpl.vn/nganhangnhanuoc/Pages/vbpq-toanvan.aspx?ItemID=165573"
+  - doc_id: "129/2025/NĐ-CP"
+    target_doc_id: "145/2020/NĐ-CP"
+    effective_from: "2025-07-01"
+    source_url: "https://vbpl.vn/TW/Pages/ivbpq-toanvan.aspx?ItemID=178294"
