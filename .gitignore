@@ -4,4 +4,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-
+.env
+*.pyc
+*.pyo
+*.pyd

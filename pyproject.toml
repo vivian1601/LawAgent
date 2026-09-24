@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "Temporal Vietnamese labour-law RAG corpus tools"
 requires-python = ">=3.11"
 dependencies = [
+  "openai>=3.17.0",
+  "python-dotenv>=1.2.3",
   "PyYAML>=6.0.2",
+  "qdrant-client>=1.19.1",
+  "rank-bm25>=0.2.2",
 ]
 
 [project.optional-dependencies]
