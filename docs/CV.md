@@ -1,11 +1,16 @@
 # CV — Cách trình bày dự án & chuẩn bị phỏng vấn
 
+> **Trạng thái hiện tại:** Giai đoạn 1 và Giai đoạn 2 đã hoàn thành. Qdrant chứa
+> 724 vector; dense search, BM25, RRF, temporal filter và CLI end-to-end đã được
+> kiểm chứng bằng 24 test và baseline retrieval 10/10 top-1. Các đoạn có dấu `__`
+> bên dưới vẫn chỉ được dùng sau khi có số liệu đánh giá trả lời/citation.
+
 ## 1. Mục dự án trong CV
 
 Giữ 3–4 dòng. Nhấn vào **quyết định kỹ thuật** và **số liệu**, không phải danh sách
 công nghệ.
 
-### Mẫu (điền số sau khi chạy eval)
+### Mẫu mục tiêu (chỉ dùng sau khi chạy eval)
 
 > **LexAgent — Multi-Agent RAG cho pháp luật lao động Việt Nam**
 > *Python, LangGraph, Qdrant, OpenAI Responses API · [github.com/...]*

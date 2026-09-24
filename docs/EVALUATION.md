@@ -3,10 +3,16 @@
 > Đây là phần khiến dự án khác biệt. Rất nhiều dự án RAG cá nhân dừng ở "chạy được".
 > Có số liệu đo chứng minh bạn hiểu mình đang xây cái gì.
 
-## 1. Bộ test: 30 câu hỏi
+> **Trạng thái hiện tại:** đây là kế hoạch đánh giá, chưa phải bộ eval đã chạy. Kho mã chưa có thư mục
+> eval hoặc bộ câu hỏi YAML, harness chấm điểm, kết quả đo hay tích hợp RAGAS. Các kiểm thử hiện có
+> gồm 24 unit/corpus-backed test cho parser, dẫn chiếu, BM25, dense retrieval,
+> temporal filter và hybrid search. Ngoài ra đã có baseline retrieval 10 truy vấn
+> đạt 10/10 top-1; đây chưa phải bộ eval trả lời/citation 30 câu.
 
-Tự soạn tay. Mỗi câu ghi rõ đáp án chuẩn **và** danh sách Điều/Khoản bắt buộc phải
-được trích dẫn. Đây là công việc tốn khoảng 3–4 giờ và không thể tự động hóa.
+## 1. Bộ test đề xuất: 30 câu hỏi
+
+Khi xây bộ eval, tự soạn tay từng câu. Mỗi câu cần ghi rõ đáp án chuẩn **và** danh sách Điều/Khoản bắt
+buộc phải được trích dẫn. Bộ 30 câu và tệp dưới đây chưa tồn tại trong kho mã.
 
 Phân bổ:
 
@@ -20,7 +26,7 @@ Phân bổ:
 Loại D quan trọng: hỏi về thuế, đất đai, hoặc câu vô nghĩa. Hệ thống **phải** trả
 lời "ngoài phạm vi", không được bịa.
 
-### Định dạng
+### Định dạng dự kiến
 
 ```yaml
 # eval/questions.yaml
@@ -47,9 +53,10 @@ lời "ngoài phạm vi", không được bịa.
 ```
 
 ⚠️ **Tự tra cứu để điền `expected_*`.** Đừng lấy đáp án từ trí nhớ hay từ LLM —
-đáp án chuẩn sai thì toàn bộ số liệu eval vô nghĩa.
+đáp án chuẩn sai thì toàn bộ số liệu eval vô nghĩa. Không coi các giá trị ví dụ trong phần này là đáp án
+đã được xác minh hoặc kết quả của một lần chạy eval.
 
-## 2. Chỉ số
+## 2. Chỉ số đề xuất
 
 ### 2.1 Citation Precision / Recall (chỉ số chính)
 
@@ -68,7 +75,7 @@ Citation F1        = harmonic mean
 = số citation không tồn tại trong corpus / tổng số citation
 ```
 
-Mục tiêu: **0%** sau khi có Verifier. Đây là con số bạn nên nêu bật.
+Mục tiêu khi có Verifier: **0%**. Verifier chưa được triển khai, do đó chưa có tỷ lệ thực tế để báo cáo.
 
 ### 2.3 Out-of-Scope Accuracy
 
@@ -78,18 +85,21 @@ Tỷ lệ câu Loại D bị từ chối đúng cách. Mục tiêu 5/5.
 
 Tỷ lệ câu Loại C trích đúng phiên bản văn bản theo mốc thời gian. Mục tiêu ≥ 4/5.
 
-### 2.5 RAGAS (bổ trợ)
+### 2.5 RAGAS (bổ trợ, chưa tích hợp)
 
 - `faithfulness` — câu trả lời có bám vào context không
 - `answer_relevancy` — có trả lời đúng câu hỏi không
 - `context_precision` — chunk lấy về có liên quan không
 
-RAGAS dùng LLM để chấm nên có nhiễu. Dùng làm tham khảo, không phải chỉ số chính.
-Chạy 3 lần lấy trung bình nếu muốn báo cáo.
+RAGAS dùng LLM để chấm nên có nhiễu. Dùng làm tham khảo, không phải chỉ số chính. Thư viện này chưa
+có trong dependencies và chưa có mã chạy RAGAS; nếu tích hợp, nên chạy nhiều lần rồi lấy trung bình.
 
-## 3. Ablation Study
+## 3. Ablation Study (kế hoạch)
 
-Chạy cùng bộ 30 câu qua 5 cấu hình. Đây là phần giá trị nhất để kể trong phỏng vấn.
+Chạy cùng bộ 30 câu qua 5 cấu hình sau khi có pipeline và bộ eval. Parser, ingest
+Qdrant, dense retrieval, BM25, RRF và lọc thời gian đã có mã; Verifier và harness
+đánh giá trả lời/citation vẫn chưa được triển khai. Baseline retrieval top-5 hiện
+được lưu tại `data/processed/retrieval_baseline.json` để phát hiện hồi quy thứ hạng.
 
 | # | Cấu hình | Mục đích |
 |---|---|---|
@@ -99,7 +109,7 @@ Chạy cùng bộ 30 câu qua 5 cấu hình. Đây là phần giá trị nhất 
 | 4 | + hybrid search (BM25 + RRF) | Đo giá trị của sparse |
 | 5 | Full: + temporal filter + mở rộng dẫn chiếu + verifier | Hệ thống hoàn chỉnh |
 
-### Bảng kết quả (điền sau Tuần 5)
+### Bảng kết quả (chỉ điền sau khi triển khai và chạy eval)
 
 | Cấu hình | Cit. P | Cit. R | Cit. F1 | Halluc. | OOS | Temporal |
 |---|---|---|---|---|---|---|
@@ -114,7 +124,7 @@ mở đầu cho README của bạn.
 
 ## 4. Phân tích lỗi
 
-Sau khi chạy eval, đọc **tất cả** các câu sai, phân loại nguyên nhân:
+Khi có eval, đọc **tất cả** các câu sai và phân loại nguyên nhân:
 
 | Nhóm lỗi | Ví dụ |
 |---|---|
@@ -128,10 +138,11 @@ Viết mục "Error Analysis" trong README với bảng phân bố này. Nó cho
 việc có phương pháp, và cung cấp sẵn nội dung để nói khi được hỏi "nếu có thêm
 thời gian, bạn sẽ cải thiện gì?".
 
-## 5. Kiểm soát chi phí khi chạy eval
+## 5. Kiểm soát chi phí khi chạy eval (kế hoạch)
 
-- Cache response theo `hash(model + prompt)`, lưu `eval/cache/`
-- 5 cấu hình × 30 câu × 2 lần gọi LLM = 300 request. Cache sẽ cứu bạn khi phải
-  chạy lại nhiều lần.
-- Planner dùng `gpt-5.4-mini`, Synthesis dùng `gpt-5.5`; cả hai gọi qua OpenAI
-  Responses API và cho phép ghi đè tên model bằng biến môi trường.
+- Khi tạo harness, cache response theo một khóa gồm model và prompt, tại một thư mục không theo dõi
+  như `eval/cache/`.
+- Chỉ ước lượng số request sau khi chốt số cấu hình, số câu và số lần gọi cho từng câu; hiện chưa có
+  pipeline nào trong kho mã thực hiện các lời gọi này.
+- Chọn model và cơ chế gọi API trong cấu hình của harness khi nó được xây dựng. Mã hiện tại chỉ dùng
+  OpenAI Embeddings cho ingest, không có Planner, Synthesis hay lời gọi OpenAI Responses API.

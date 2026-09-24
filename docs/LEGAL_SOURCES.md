@@ -7,7 +7,7 @@
 
 MVP trả lời câu hỏi của **người lao động làm việc theo hợp đồng tại Việt Nam**,
 theo hành trình: nhận việc → làm việc → nghỉ việc → tranh chấp. Phạm vi này đủ gần
-với nhu cầu cá nhân để hữu ích, nhưng vẫn đủ hẹp cho dự án 6 tuần.
+với nhu cầu cá nhân để hữu ích, nhưng vẫn đủ hẹp để thực hiện theo lộ trình nhiều giai đoạn.
 
 Không đưa toàn bộ BHXH, BHTN, công đoàn và an toàn lao động vào cùng MVP. Mỗi
 lĩnh vực có hệ thống điều kiện hưởng, hồ sơ, thời hạn và văn bản hướng dẫn riêng;
@@ -35,9 +35,9 @@ CSDL VBPL xác định Nghị định 145 đã bị tác động bởi:
 - `129/2025/NĐ-CP` — phân định thẩm quyền chính quyền địa phương hai cấp.
 
 Ba văn bản này chủ yếu đổi thẩm quyền và thủ tục quản lý. Không cần embed toàn văn
-vào corpus hỏi đáp quyền lợi cá nhân; cần ingest các điều sửa đổi như **patch** để
-đóng/mở hiệu lực đúng ở cấp chunk. Nếu chưa cài patch, phải loại các chunk bị tác
-động khỏi câu trả lời hiện hành.
+vào corpus hỏi đáp quyền lợi cá nhân; về sau cần xử lý các điều sửa đổi như **patch** để
+đóng/mở hiệu lực đúng ở cấp chunk. `data/manifest.yaml` đã có ba patch record, nhưng parser hiện
+chỉ xử lý mảng `documents`; patch chưa được parse, ingest hoặc áp dụng để thay đổi hiệu lực chunk.
 
 ## 3. Các chủ đề MVP phải trả lời được
 
@@ -98,10 +98,15 @@ Luật Việc làm `38/2013/QH13` (đã được Luật BHXH sửa đổi một 
 
 ## 6. Checklist tải dữ liệu
 
+Corpus hiện có 8 văn bản trong `data/manifest.yaml`. Lần parse gần nhất được xác nhận trong
+`data/processed/validation_report.json`: 702 Điều và 724 chunk; `data/processed/spot_check.md` có
+mẫu kiểm tra thủ công 10 chunk.
+
 - [ ] Tải bản `.doc`/`.docx` nếu có để lấy text; giữ PDF ký số làm bản đối chiếu.
 - [ ] Đặt tên `doc_id__issued_date.ext`, không đặt tên chỉ theo tiêu đề.
-- [ ] Điền đủ sáu văn bản vào `data/manifest.yaml`.
-- [ ] Tạo patch record cho các điều của Nghị định 145 bị tác động.
-- [ ] Đối chiếu số Điều parse được với mục lục của văn bản.
-- [ ] Lấy mẫu 10 Điều có Khoản/Điểm phức tạp để kiểm tra thủ công.
+- [x] Điền đủ 8 phiên bản văn bản vào `data/manifest.yaml`.
+- [x] Ghi ba patch record cho Nghị định 145 trong `data/manifest.yaml`.
+- [ ] Cài đặt xử lý patch để áp dụng các record đó ở cấp chunk trước khi dùng cho câu trả lời hiện hành.
+- [x] Đối chiếu số Điều parse được với mục lục của văn bản.
+- [x] Lấy mẫu 10 Điều có Khoản/Điểm phức tạp để kiểm tra thủ công.
 - [ ] Chạy câu hỏi cùng nội dung ở ba mốc 2023, 2025 và 2026.
