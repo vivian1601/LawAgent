@@ -1,0 +1,696 @@
+{
+  "retriever": "dense+bm25+rrf",
+  "rrf_k": 60,
+  "top_k": 5,
+  "summary": {
+    "passed": 10,
+    "total": 10
+  },
+  "cases": [
+    {
+      "query": "thời gian thử việc",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_25",
+      "actual_top1": "18-VBHN-VPQH__dieu_25",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_25",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 25. Thời gian thử việc",
+          "rrf_score": 0.032018442622950824,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6568135,
+          "sparse_score": 13.038788927870286
+        },
+        {
+          "rank": 2,
+          "chunk_id": "18-VBHN-VPQH__dieu_27",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 27. Kết thúc thời gian thử việc",
+          "rrf_score": 0.032266458495966696,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.525388,
+          "sparse_score": 14.279481198991554
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_24",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 24. Thử việc",
+          "rrf_score": 0.03225806451612903,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5577889,
+          "sparse_score": 13.442282145211612
+        },
+        {
+          "rank": 4,
+          "chunk_id": "283-2026-ND-CP__dieu_16",
+          "breadcrumb": "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội > Chương II. HÀNH VI VI PHẠM, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ ĐỐI VỚI HÀNH VI VI PHẠM TRONG LĨNH VỰC LAO ĐỘNG > Mục 2. VI PHẠM HÀNH CHÍNH VỀ ĐIỀU KIỆN LAO ĐỘNG VÀ QUAN HỆ LAO ĐỘNG > Điều 16. Vi phạm quy định về thử việc",
+          "rrf_score": 0.03149801587301587,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.52513593,
+          "sparse_score": 13.07178515312037
+        },
+        {
+          "rank": 5,
+          "chunk_id": "18-VBHN-VPQH__dieu_26",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 26. Tiền lương thử việc",
+          "rrf_score": 0.03076923076923077,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5091309,
+          "sparse_score": 12.624883343571023
+        }
+      ]
+    },
+    {
+      "query": "Điều 35",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_35",
+      "actual_top1": "18-VBHN-VPQH__dieu_35",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_35",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 3. CHẤM DỨT HỢP ĐỒNG LAO ĐỘNG > Điều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động",
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5367651,
+          "sparse_score": 6.779038416880162
+        },
+        {
+          "rank": 2,
+          "chunk_id": "145-2020-ND-CP__dieu_35",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương IV. CHO THUÊ LẠI LAO ĐỘNG > Mục 4. TRÁCH NHIỆM TỔ CHỨC THỰC HIỆN VỀ CHO THUÊ LẠI LAO ĐỘNG > Điều 35. Trách nhiệm của Bộ Lao động - Thương binh và Xã hội",
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.53968036,
+          "sparse_score": 7.828827771303475
+        },
+        {
+          "rank": 3,
+          "chunk_id": "283-2026-ND-CP__dieu_35",
+          "breadcrumb": "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội > Chương II. HÀNH VI VI PHẠM, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ ĐỐI VỚI HÀNH VI VI PHẠM TRONG LĨNH VỰC LAO ĐỘNG > Mục 3. HÀNH VI VI PHẠM VỀ AN TOÀN, VỆ SINH LAO ĐỘNG > Điều 35. Vi phạm quy định về sử dụng máy, thiết bị có yêu cầu nghiêm ngặt về an toàn, vệ sinh lao động",
+          "rrf_score": 0.031746031746031744,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.48817044,
+          "sparse_score": 5.330358849713347
+        },
+        {
+          "rank": 4,
+          "chunk_id": "18-VBHN-VPQH__dieu_39",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 3. CHẤM DỨT HỢP ĐỒNG LAO ĐỘNG > Điều 39. Đơn phương chấm dứt hợp đồng lao động trái pháp luật",
+          "rrf_score": 0.030117753623188408,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4623583,
+          "sparse_score": 7.126810204310962
+        },
+        {
+          "rank": 5,
+          "chunk_id": "145-2020-ND-CP__dieu_115__part_8",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương XI. ĐIỀU KHOẢN THI HÀNH > Điều 115. Trách nhiệm thi hành",
+          "rrf_score": 0.015625,
+          "sources": [
+            "dense"
+          ],
+          "dense_score": 0.48777297,
+          "sparse_score": null
+        }
+      ]
+    },
+    {
+      "query": "thời gian thử việc",
+      "as_of": "2023-01-01",
+      "expected_top1": "45-2019-QH14__dieu_25",
+      "actual_top1": "45-2019-QH14__dieu_25",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "45-2019-QH14__dieu_25",
+          "breadcrumb": "Bộ luật Lao động > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 25. Thời gian thử việc",
+          "rrf_score": 0.032266458495966696,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6534634,
+          "sparse_score": 12.7724884497698
+        },
+        {
+          "rank": 2,
+          "chunk_id": "45-2019-QH14__dieu_24",
+          "breadcrumb": "Bộ luật Lao động > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 24. Thử việc",
+          "rrf_score": 0.03225806451612903,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.56068873,
+          "sparse_score": 13.203817622367731
+        },
+        {
+          "rank": 3,
+          "chunk_id": "45-2019-QH14__dieu_27",
+          "breadcrumb": "Bộ luật Lao động > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 27. Kết thúc thời gian thử việc",
+          "rrf_score": 0.032018442622950824,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.52254367,
+          "sparse_score": 14.028696159649238
+        },
+        {
+          "rank": 4,
+          "chunk_id": "12-2022-ND-CP__dieu_10",
+          "breadcrumb": "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội > Chương II. HÀNH VI VI PHẠM, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ ĐỐI VỚI HÀNH VI VI PHẠM TRONG LĨNH VỰC LAO ĐỘNG > Điều 10. Vi phạm quy định về thử việc",
+          "rrf_score": 0.03149801587301587,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.54603344,
+          "sparse_score": 12.771519796834417
+        },
+        {
+          "rank": 5,
+          "chunk_id": "45-2019-QH14__dieu_26",
+          "breadcrumb": "Bộ luật Lao động > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 26. Tiền lương thử việc",
+          "rrf_score": 0.03076923076923077,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4742443,
+          "sparse_score": 12.443694216407813
+        }
+      ]
+    },
+    {
+      "query": "tiền lương thử việc",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_26",
+      "actual_top1": "18-VBHN-VPQH__dieu_26",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_26",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 26. Tiền lương thử việc",
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6064173,
+          "sparse_score": 12.957973658824772
+        },
+        {
+          "rank": 2,
+          "chunk_id": "283-2026-ND-CP__dieu_16",
+          "breadcrumb": "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội > Chương II. HÀNH VI VI PHẠM, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ ĐỐI VỚI HÀNH VI VI PHẠM TRONG LĨNH VỰC LAO ĐỘNG > Mục 2. VI PHẠM HÀNH CHÍNH VỀ ĐIỀU KIỆN LAO ĐỘNG VÀ QUAN HỆ LAO ĐỘNG > Điều 16. Vi phạm quy định về thử việc",
+          "rrf_score": 0.03200204813108039,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5510237,
+          "sparse_score": 12.728873567186062
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_25",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 25. Thời gian thử việc",
+          "rrf_score": 0.0315136476426799,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.55342406,
+          "sparse_score": 9.600566968653629
+        },
+        {
+          "rank": 4,
+          "chunk_id": "18-VBHN-VPQH__dieu_24",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 24. Thử việc",
+          "rrf_score": 0.03125,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.50933856,
+          "sparse_score": 10.494732115341595
+        },
+        {
+          "rank": 5,
+          "chunk_id": "18-VBHN-VPQH__dieu_27",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 27. Kết thúc thời gian thử việc",
+          "rrf_score": 0.03057889822595705,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.46848428,
+          "sparse_score": 10.606218854164602
+        }
+      ]
+    },
+    {
+      "query": "thời giờ làm việc bình thường",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_105",
+      "actual_top1": "18-VBHN-VPQH__dieu_105",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_105",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 1. THỜI GIỜ LÀM VIỆC > Điều 105. Thời giờ làm việc bình thường",
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6099658,
+          "sparse_score": 16.540065045964706
+        },
+        {
+          "rank": 2,
+          "chunk_id": "145-2020-ND-CP__dieu_60",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 60. Giới hạn số giờ làm thêm",
+          "rrf_score": 0.03128054740957967,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4743891,
+          "sparse_score": 16.44165859575367
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_107",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 1. THỜI GIỜ LÀM VIỆC > Điều 107. Làm thêm giờ",
+          "rrf_score": 0.03125763125763126,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.49212173,
+          "sparse_score": 15.50077482806236
+        },
+        {
+          "rank": 4,
+          "chunk_id": "145-2020-ND-CP__dieu_61",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 61. Các trường hợp được tổ chức làm thêm từ trên 200 giờ đến 300 giờ",
+          "rrf_score": 0.030330882352941176,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.48634267,
+          "sparse_score": 13.238121936796105
+        },
+        {
+          "rank": 5,
+          "chunk_id": "145-2020-ND-CP__dieu_58",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 58. Thời giờ được tính vào thời giờ làm việc được hưởng lương",
+          "rrf_score": 0.016129032258064516,
+          "sources": [
+            "dense"
+          ],
+          "dense_score": 0.5118878,
+          "sparse_score": null
+        }
+      ]
+    },
+    {
+      "query": "làm thêm giờ",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_107",
+      "actual_top1": "18-VBHN-VPQH__dieu_107",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_107",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 1. THỜI GIỜ LÀM VIỆC > Điều 107. Làm thêm giờ",
+          "rrf_score": 0.031544957774465976,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6265226,
+          "sparse_score": 10.541741051021319
+        },
+        {
+          "rank": 2,
+          "chunk_id": "145-2020-ND-CP__dieu_60",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 60. Giới hạn số giờ làm thêm",
+          "rrf_score": 0.031544957774465976,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.534503,
+          "sparse_score": 10.967020091029621
+        },
+        {
+          "rank": 3,
+          "chunk_id": "145-2020-ND-CP__dieu_55",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VI. TIỀN LƯƠNG > Mục 2. HÌNH THỨC TRẢ LƯƠNG VÀ TIỀN LƯƠNG LÀM THÊM GIỜ, LÀM VIỆC VÀO BAN ĐÊM > Điều 55. Tiền lương làm thêm giờ",
+          "rrf_score": 0.0315136476426799,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5429902,
+          "sparse_score": 10.96018861964849
+        },
+        {
+          "rank": 4,
+          "chunk_id": "145-2020-ND-CP__dieu_59",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 59. Sự đồng ý của người lao động khi làm thêm giờ",
+          "rrf_score": 0.03149801587301587,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5601915,
+          "sparse_score": 10.586517932489931
+        },
+        {
+          "rank": 5,
+          "chunk_id": "18-VBHN-VPQH__dieu_108",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 1. THỜI GIỜ LÀM VIỆC > Điều 108. Làm thêm giờ trong trường hợp đặc biệt",
+          "rrf_score": 0.031054405392392875,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.561041,
+          "sparse_score": 10.087499982192334
+        }
+      ]
+    },
+    {
+      "query": "nghỉ hằng năm",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_113",
+      "actual_top1": "18-VBHN-VPQH__dieu_113",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_113",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 2. THỜI GIỜ NGHỈ NGƠI > Điều 113. Nghỉ hằng năm",
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.598259,
+          "sparse_score": 11.609751386060198
+        },
+        {
+          "rank": 2,
+          "chunk_id": "18-VBHN-VPQH__dieu_114",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Mục 2. THỜI GIỜ NGHỈ NGƠI > Điều 114. Ngày nghỉ hằng năm tăng thêm theo thâm niên làm việc",
+          "rrf_score": 0.031754032258064516,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.49032182,
+          "sparse_score": 11.00819317957284
+        },
+        {
+          "rank": 3,
+          "chunk_id": "145-2020-ND-CP__dieu_66",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 66. Cách tính ngày nghỉ hằng năm trong một số trường hợp đặc biệt",
+          "rrf_score": 0.0315136476426799,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.48090696,
+          "sparse_score": 11.411261981689524
+        },
+        {
+          "rank": 4,
+          "chunk_id": "145-2020-ND-CP__dieu_65",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 65. Thời gian được coi là thời gian làm việc để tính số ngày nghỉ hằng",
+          "rrf_score": 0.031009615384615385,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4820261,
+          "sparse_score": 9.330920873412712
+        },
+        {
+          "rank": 5,
+          "chunk_id": "145-2020-ND-CP__dieu_67",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương VII. THỜI GIỜ LÀM VIỆC, THỜI GIỜ NGHỈ NGƠI > Điều 67. Tiền tàu xe, tiền lương trong thời gian đi đường, tiền lương ngày",
+          "rrf_score": 0.03036576949620428,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.43095112,
+          "sparse_score": 11.303993934101642
+        }
+      ]
+    },
+    {
+      "query": "nguyên tắc xử lý kỷ luật lao động",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_122",
+      "actual_top1": "18-VBHN-VPQH__dieu_122",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_122",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VIII. KỶ LUẬT LAO ĐỘNG, TRÁCH NHIỆM VẬT CHẤT > Mục 1. KỶ LUẬT LAO ĐỘNG > Điều 122. Nguyên tắc, trình tự, thủ tục xử lý kỷ luật lao động",
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6979732,
+          "sparse_score": 21.536788105107455
+        },
+        {
+          "rank": 2,
+          "chunk_id": "145-2020-ND-CP__dieu_89__part_2",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương X. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG LÀ NGƯỜI GIÚP VIỆC GIA ĐÌNH > Điều 89. Một số quy định riêng đối với lao động là người giúp việc gia đình",
+          "rrf_score": 0.030834914611005692,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.623436,
+          "sparse_score": 18.683415513332076
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_180",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương XIV. GIẢI QUYẾT TRANH CHẤP LAO ĐỘNG > Mục 1. NHỮNG QUY ĐỊNH CHUNG VỀ GIẢI QUYẾT TRANH CHẤP LAO ĐỘNG > Điều 180. Nguyên tắc giải quyết tranh chấp lao động",
+          "rrf_score": 0.02877846790890269,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.6099127,
+          "sparse_score": 15.25426573888706
+        },
+        {
+          "rank": 4,
+          "chunk_id": "18-VBHN-VPQH__dieu_117",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VIII. KỶ LUẬT LAO ĐỘNG, TRÁCH NHIỆM VẬT CHẤT > Mục 1. KỶ LUẬT LAO ĐỘNG > Điều 117. Kỷ luật lao động",
+          "rrf_score": 0.016129032258064516,
+          "sources": [
+            "dense"
+          ],
+          "dense_score": 0.67001796,
+          "sparse_score": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "18-VBHN-VPQH__dieu_15",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương III. HỢP ĐỒNG LAO ĐỘNG > Mục 1. GIAO KẾT HỢP ĐỒNG LAO ĐỘNG > Điều 15. Nguyên tắc giao kết hợp đồng lao động",
+          "rrf_score": 0.015873015873015872,
+          "sources": [
+            "sparse"
+          ],
+          "dense_score": null,
+          "sparse_score": 16.56906657788072
+        }
+      ]
+    },
+    {
+      "query": "lao động chưa thành niên",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_143",
+      "actual_top1": "18-VBHN-VPQH__dieu_143",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_143",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương XI. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG CHƯA THÀNH NIÊN VÀ MỘT SỐ LAO ĐỘNG KHÁC > Mục 1. LAO ĐỘNG CHƯA THÀNH NIÊN > Điều 143. Lao động chưa thành niên",
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.627326,
+          "sparse_score": 14.533835092033495
+        },
+        {
+          "rank": 2,
+          "chunk_id": "18-VBHN-VPQH__dieu_144",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương XI. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG CHƯA THÀNH NIÊN VÀ MỘT SỐ LAO ĐỘNG KHÁC > Mục 1. LAO ĐỘNG CHƯA THÀNH NIÊN > Điều 144. Nguyên tắc sử dụng lao động chưa thành niên",
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.56061864,
+          "sparse_score": 14.743617898616147
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_146",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương XI. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG CHƯA THÀNH NIÊN VÀ MỘT SỐ LAO ĐỘNG KHÁC > Mục 1. LAO ĐỘNG CHƯA THÀNH NIÊN > Điều 146. Thời giờ làm việc của người chưa thành niên",
+          "rrf_score": 0.031746031746031744,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.51327324,
+          "sparse_score": 13.85092745981201
+        },
+        {
+          "rank": 4,
+          "chunk_id": "18-VBHN-VPQH__dieu_147",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương XI. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG CHƯA THÀNH NIÊN VÀ MỘT SỐ LAO ĐỘNG KHÁC > Mục 1. LAO ĐỘNG CHƯA THÀNH NIÊN > Điều 147. Công việc và nơi làm việc cấm sử dụng người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi",
+          "rrf_score": 0.031009615384615385,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.5042,
+          "sparse_score": 13.586841266364516
+        },
+        {
+          "rank": 5,
+          "chunk_id": "283-2026-ND-CP__dieu_27",
+          "breadcrumb": "Xử phạt vi phạm hành chính trong lĩnh vực lao động và bảo hiểm xã hội > Chương II. HÀNH VI VI PHẠM, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ ĐỐI VỚI HÀNH VI VI PHẠM TRONG LĨNH VỰC LAO ĐỘNG > Mục 2. VI PHẠM HÀNH CHÍNH VỀ ĐIỀU KIỆN LAO ĐỘNG VÀ QUAN HỆ LAO ĐỘNG > Điều 27. Vi phạm quy định về lao động chưa thành niên",
+          "rrf_score": 0.031009615384615385,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.50879794,
+          "sparse_score": 13.492584291391118
+        }
+      ]
+    },
+    {
+      "query": "Điều 90",
+      "as_of": "2026-09-22",
+      "expected_top1": "18-VBHN-VPQH__dieu_90",
+      "actual_top1": "18-VBHN-VPQH__dieu_90",
+      "passed": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "18-VBHN-VPQH__dieu_90",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương VI. TIỀN LƯƠNG > Điều 90. Tiền lương",
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4984008,
+          "sparse_score": 8.316051581410473
+        },
+        {
+          "rank": 2,
+          "chunk_id": "145-2020-ND-CP__dieu_90",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương X. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG LÀ NGƯỜI GIÚP VIỆC GIA ĐÌNH > Điều 90. Nghĩa vụ của người sử dụng lao động, người lao động",
+          "rrf_score": 0.03200204813108039,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4874439,
+          "sparse_score": 8.228152506466438
+        },
+        {
+          "rank": 3,
+          "chunk_id": "18-VBHN-VPQH__dieu_83",
+          "breadcrumb": "Bộ luật Lao động (văn bản hợp nhất 2026) > Chương V. ĐỐI THOẠI TẠI NƠI LÀM VIỆC, THƯƠNG LƯỢNG TẬP THỂ, THỎA ƯỚC LAO ĐỘNG TẬP THỂ > Mục 3. THỎA ƯỚC LAO ĐỘNG TẬP THỂ > Điều 83. Thỏa ước lao động tập thể hết hạn",
+          "rrf_score": 0.03125763125763126,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.48038998,
+          "sparse_score": 7.895014385944271
+        },
+        {
+          "rank": 4,
+          "chunk_id": "145-2020-ND-CP__dieu_89",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương X. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG LÀ NGƯỜI GIÚP VIỆC GIA ĐÌNH > Điều 89. Một số quy định riêng đối với lao động là người giúp việc gia đình",
+          "rrf_score": 0.029211087420042643,
+          "sources": [
+            "dense",
+            "sparse"
+          ],
+          "dense_score": 0.4770087,
+          "sparse_score": 3.6874864567980143
+        },
+        {
+          "rank": 5,
+          "chunk_id": "145-2020-ND-CP__dieu_89__part_2",
+          "breadcrumb": "Hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động > Chương X. NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG LÀ NGƯỜI GIÚP VIỆC GIA ĐÌNH > Điều 89. Một số quy định riêng đối với lao động là người giúp việc gia đình",
+          "rrf_score": 0.01639344262295082,
+          "sources": [
+            "dense"
+          ],
+          "dense_score": 0.5023683,
+          "sparse_score": null
+        }
+      ]
+    }
+  ]
+}
